@@ -1,0 +1,24 @@
+package java_td;
+
+import java.util.Scanner;
+
+public class Td01 {
+
+	public static void main(String[] args) {
+		
+		Scanner clavier = new Scanner(System.in);
+		
+		System.out.println("Entrez un nombre entre -99 et 99: ");
+		int NUMBER = clavier.nextInt();
+		
+		clavier.close();
+		
+		int UNITS = NUMBER % 10;
+		int TENS = NUMBER / 10;
+		
+		int PERMUTED_NUMBER = (UNITS * 10) + TENS;
+		
+		System.out.println("Le nombre permuté : " + PERMUTED_NUMBER);
+	}
+
+}
