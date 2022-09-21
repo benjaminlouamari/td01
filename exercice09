@@ -1,0 +1,16 @@
+package java_td;
+
+import java.util.Scanner;
+
+public class Td01 {
+
+	public static void main(String[] args) {
+		
+		int a = 1;
+		int b = 2;
+		
+		System.out.println("Somme = " + (a + b));
+		System.out.println("Produit = " + a * b);
+	}
+
+}
