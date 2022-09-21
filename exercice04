@@ -1,0 +1,35 @@
+package java_td;
+
+import java.util.Scanner;
+
+public class Td01 {
+
+	public static void main(String[] args) {
+		
+		Scanner clavier = new Scanner(System.in);
+		
+		System.out.println("Entrez votre sexe (f/m):");
+		char GENDER = clavier.next().charAt(0);
+		
+		System.out.println("Entrez votre poids (en kg):");
+		double WEIGHT = clavier.nextDouble();
+		
+		System.out.println("Entrez votre taille (en cm):");
+		double HEIGHT = clavier.nextDouble() / 100;
+		
+		clavier.close();
+		
+		double BODY_SURFACE = Math.pow(WEIGHT, 0.425) * Math.pow(HEIGHT, 0.725) * 0.202 ;
+		double MET;
+		
+		if(GENDER == 'f') {
+			MET = BODY_SURFACE * 24 * 35;
+		} else {
+			MET = BODY_SURFACE * 24 * 40;
+		}
+		
+		System.out.println("Votre métabolisme de base est de : " + MET);
+		
+	}
+
+}
