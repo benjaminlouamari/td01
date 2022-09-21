@@ -1,0 +1,30 @@
+package java_td;
+
+import java.util.Scanner;
+
+public class Td01 {
+
+	public static void main(String[] args) {
+		
+		Scanner clavier = new Scanner(System.in);
+		
+		System.out.println("Entrez la longueur a:");
+		double SIDE_A = clavier.nextDouble();
+		
+		System.out.println("Entrez la longueur b:");
+		double SIDE_B = clavier.nextDouble();
+		
+		System.out.println("Entrez la longueur c:");
+		double SIDE_C = clavier.nextDouble();
+		
+		clavier.close();
+		
+		double PERIMETRE = SIDE_A + SIDE_B + SIDE_C;
+		double AREA = Math.pow((PERIMETRE/2)*(PERIMETRE/2-SIDE_A)*(PERIMETRE/2-SIDE_B)*(PERIMETRE/2-SIDE_C), 0.5);
+		
+		System.out.println("Le périmètre est de : " + PERIMETRE);
+		System.out.println("L'aire est de : " + AREA);
+		
+	}
+
+}
