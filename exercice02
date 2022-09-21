@@ -1,0 +1,25 @@
+package java_td;
+
+import java.util.Scanner;
+
+public class Td01 {
+
+	public static void main(String[] args) {
+		
+		Scanner clavier = new Scanner(System.in);
+		
+		System.out.println("Entrez un premier nombre:");
+		int NUMBER_A = clavier.nextInt();
+		
+		System.out.println("Entrez un deuxième nombre:");
+		double NUMBER_B = clavier.nextInt();
+		
+		clavier.close();
+		
+		double AVG = (NUMBER_A + NUMBER_B) / 2;
+		
+		System.out.println("La moyenne des deux nombres : " + AVG );
+		
+	}
+
+}
