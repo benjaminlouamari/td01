@@ -1,0 +1,25 @@
+package java_td;
+
+import java.util.Scanner;
+
+public class Td01 {
+
+	public static void main(String[] args) {
+		
+		Scanner clavier = new Scanner(System.in);
+		
+		System.out.println("Entrez un rayon:");
+		double CIRCLE_RADIUS = clavier.nextDouble();
+		
+		System.out.println("Entrez un angle (en degré):");
+		double ANGLE_DEGREE = clavier.nextDouble();
+		
+		clavier.close();
+		
+		double CIRCULAR_AREA = Math.PI * Math.pow(CIRCLE_RADIUS, 2) * ANGLE_DEGREE / 360;
+		
+		System.out.println("L'aire du secteur circulaire est de : " + CIRCULAR_AREA);
+		
+	}
+
+}
