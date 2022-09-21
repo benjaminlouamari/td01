@@ -1,0 +1,28 @@
+package java_td;
+
+import java.util.Scanner;
+
+public class Td01 {
+
+	public static void main(String[] args) {
+		
+		Scanner clavier = new Scanner(System.in);
+		
+		System.out.println("Entrez une durée en seconde: ");
+		int SECONDS = clavier.nextInt();
+		
+		clavier.close();
+		
+		int DAYS = SECONDS / 86400;
+		SECONDS %= 86400;
+		
+		int HOURS = SECONDS / 3600;
+		SECONDS %= 3600;
+		
+		int MINUTES = SECONDS / 60;
+		SECONDS %= 60;
+		
+		System.out.println(DAYS + ":" + HOURS + ":" + MINUTES + ":" + SECONDS);
+	}
+
+}
